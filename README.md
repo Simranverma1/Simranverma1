@@ -1,97 +1,123 @@
 # Hi, I'm Simran 👋
 
-### Building AI applications that are useful beyond the demo.
+### AI applications · Voice agents · RAG · Python backend development
 
-I’m an Information Technology graduate specializing in Data Science, working with Python, machine learning, and backend development.
+I build AI applications and enjoy figuring out what makes them useful: the right data, a responsive experience, and a system whose behavior I can measure and explain.
 
-I’m interested in what happens between getting an AI model to respond and building an application people can actually use: retrieving the right information, handling failures, measuring performance, and making the experience feel responsive.
+I'm an Information Technology graduate with a specialization in Data Science. My projects span real-time voice agents, document question answering, content moderation, and music recommendations.
 
-My projects explore conversational AI, document question answering, content moderation, and recommendation systems.
+[LinkedIn](https://www.linkedin.com/in/simranverma12/) · [Email](mailto:simran.verma1081@gmail.com)
 
 ---
 
-## What interests me
+## 🔎 What interests me
 
-- **Conversational AI:** How can voice agents respond naturally with less waiting?
-- **Retrieval & agents:** When should an application retrieve documents, search the web, or call a tool?
-- **Applied machine learning:** How do we turn model predictions into useful product features?
-- **AI backend engineering:** How do we connect models, APIs, and data into reliable applications?
+- **Conversational AI:** reducing the gap between a user finishing a sentence and an agent responding.
+- **RAG & agents:** choosing when to retrieve documents, search the web, or call a tool.
+- **Applied machine learning:** connecting model predictions to useful application features.
+- **Backend engineering:** handling streaming, APIs, failures, and performance.
 
-## Selected projects
+## 🚀 Selected projects
 
 ### 🎙️ [Real-Time Voice Agent](https://github.com/Simranverma1/voice-agent-latency)
 
 **Where does the waiting happen in a voice conversation?**
 
-A speech-to-speech agent connecting speech recognition, an LLM, and speech synthesis. The project compares pipeline configurations using recorded prompts and stage-level timing to investigate latency and streaming behavior.
+A speech-to-speech agent connecting STT, an LLM, and TTS. I built a replay benchmark to compare five pipeline configurations using recorded prompts and stage-level timing, investigating streaming, response latency, and network resilience.
 
-**Focus:** asynchronous Python, streaming, benchmarking, and network resilience.
+**Engineering focus:** asynchronous execution, sentence chunking, pipelined TTS requests, and latency measurement.
 
 `Python` `asyncio` `Deepgram` `Groq` `WebSockets`
 
-### 🛡️ [SafeNet](https://github.com/Simranverma1/Safenet-AI)
+### 🛡️ [SafeNet — Content Moderation](https://github.com/Simranverma1/Safenet-AI)
 
 **How can text and image moderation fit into a browser experience?**
 
-A team-built content moderation platform. I contributed the FastAPI backend and models for multilabel text classification and safe/NSFW image classification.
+A team-built browser-extension platform. My contribution included the FastAPI backend and models for multilabel text classification and safe/NSFW image classification.
 
 Our team placed in the **Top 105 of 3,700+ teams** in the GDG Solution Challenge 2025.
 
-**Focus:** connecting NLP and computer vision models to an application.
+**Engineering focus:** integrating NLP and computer vision models with an application backend.
 
 `FastAPI` `TF-IDF` `Logistic Regression` `CNNs`
 
-### 🎵 [VelociTunes](https://github.com/Simranverma1/VelocityItunes-dev)
+### 🎵 [VelociTunes — Speed-Aware Music Recommendations](https://github.com/Simranverma1/VelocityItunes-dev)
 
 **Can music recommendations adapt to driving speed?**
 
-A recommendation system using Spotify audio features, clustering, and similarity ranking to recommend tracks for different speed bands, served through a Dockerized Flask API.
+A recommendation system built around 18K Spotify tracks, audio-feature clustering, and cosine similarity. Recommendations are served through a Dockerized Flask API.
 
-**Focus:** feature processing, recommendation logic, and memory-efficient similarity computation.
+**Engineering focus:** feature processing, speed-aware ranking, and memory-efficient similarity computation.
 
 `Pandas` `NumPy` `scikit-learn` `Flask` `Docker`
 
-### 📚 NexusRAG
+### 📚 NexusRAG — Agentic RAG Assistant
 
 **Should a question be answered from a document or the web?**
 
-A LangGraph-based assistant that routes questions to PDF retrieval or web search, with a Streamlit interface and source references.
+A LangGraph workflow that routes questions to PDF retrieval or web search, with a Streamlit interface and source references.
 
-**Focus:** conditional agent workflows, document ingestion, and vector retrieval.
+**Engineering focus:** document ingestion, vector retrieval, and conditional agent workflows.
 
 `LangGraph` `FAISS` `Llama 3` `Streamlit` `Tavily`
 
 ---
 
-## My toolkit
+## 🛠️ Technical toolkit
 
-| Area | Technologies I've used |
+Technologies and concepts used across my projects.
+
+| Area | Technologies & concepts |
 |---|---|
-| Programming | Python, SQL, C |
-| AI & retrieval | LangGraph, LangChain, FAISS, embeddings, RAG |
-| Machine learning | scikit-learn, TensorFlow/Keras, Pandas, NumPy |
-| Backend | FastAPI, Flask, REST APIs, WebSockets, asyncio |
-| Development | Git, Docker, Streamlit |
+| **Programming** | Python, SQL, C, asynchronous programming |
+| **Data processing** | Pandas, NumPy, Matplotlib, preprocessing, feature scaling |
+| **Machine learning** | scikit-learn, classification, clustering, recommendation systems, cosine similarity |
+| **Deep learning & NLP** | TensorFlow/Keras, CNNs, TF-IDF, multilabel text classification |
+| **Generative AI & agents** | LangGraph, LangChain, LLM routing, prompt engineering |
+| **RAG & retrieval** | FAISS, embeddings, vector search, PDF ingestion, document chunking |
+| **Backend & APIs** | FastAPI, Flask, REST APIs, WebSockets, asyncio, httpx |
+| **Interfaces & development** | Streamlit, Git, Docker, Jupyter |
+| **Models & services** | gpt-oss via Groq, Llama 3, Deepgram, Tavily |
 
-## Exploring next
+## 🎧 Speech & real-time AI
 
-I want to take my projects further by learning more about:
+| Area | Technologies & concepts |
+|---|---|
+| **Speech recognition — STT/ASR** | Deepgram, batch and streaming transcription, interim and final transcripts |
+| **Speech synthesis — TTS** | Deepgram Aura, sentence chunking, pipelined TTS requests, audio playback |
+| **Voice activity & turn detection** | VAD, endpointing, silence detection, end-of-turn detection |
+| **Pipeline orchestration** | STT → LLM → TTS, WebSockets, asynchronous I/O, audio buffering, ordered playback |
+| **Audio processing** | PCM audio, sample-rate conversion, resampling, mono/stereo conversion |
+| **Performance measurement** | End-of-speech-to-first-audio latency, TTFT, TTS time to first audio, p50/p95 latency, critical-path profiling |
 
-- **RAG evaluation:** measuring retrieval quality, answer relevance, and source support.
-- **Agent reliability:** tool validation, controlled retries, and human approval for consequential actions.
-- **Backend testing:** using pytest and GitHub Actions to catch regressions.
-- **Observability:** tracing requests and understanding latency, failures, and API costs.
-- **Deployment:** packaging applications with reproducible setup and clear configuration.
+## 🌱 Expanding my stack
 
-## Questions I want my projects to answer
+My learning roadmap for taking these projects further.
 
-- Does it solve a clear problem?
-- What evidence shows that it works?
-- Where does it fail, and how does it recover?
-- Can someone else run it and reproduce the results?
+| Area | Tools & concepts I plan to explore |
+|---|---|
+| **ML development** | XGBoost, cross-validation, hyperparameter optimization |
+| **Deep learning & language models** | PyTorch, Hugging Face Transformers, Sentence Transformers |
+| **Advanced retrieval** | Qdrant, PostgreSQL/pgvector, hybrid search, reranking |
+| **Agent engineering** | Tool calling, structured outputs, context management, MCP, human approval workflows |
+| **Model adaptation & serving** | PEFT, LoRA/QLoRA, quantization, Ollama, vLLM |
+| **Databases & backend design** | PostgreSQL, SQLAlchemy, Redis, migrations, Pydantic, authentication, background tasks |
+| **Evaluation & observability** | MLflow, LangSmith, RAG evaluation, experiment tracking, tracing, token-cost monitoring |
+| **Testing & code quality** | pytest, integration tests, API testing, Ruff, type checking, pre-commit |
+| **Deployment & automation** | Docker Compose, GitHub Actions, CI/CD, Linux, AWS fundamentals |
+| **Development workflows** | uv, Gradio |
 
-## Let's connect
+## 🧭 What I want to build toward
 
-I’m open to early-career opportunities in **AI/ML and Python development**, and collaboration on practical AI projects.
+- AI applications with measurable quality and clear failure behavior.
+- Voice interfaces that feel responsive under realistic network conditions.
+- Retrieval systems whose answers can be checked against their sources.
+- Reproducible projects with useful documentation, tests, and straightforward setup.
+
+## 🤝 Let's connect
+
+I'm open to **early-career AI/ML and Python development opportunities**, as well as collaboration on practical AI projects.
+
+If you're working on voice AI, retrieval, or ML-powered applications, I'd love to connect.
 
 [LinkedIn](https://www.linkedin.com/in/simranverma12/) · [Email](mailto:simran.verma1081@gmail.com)
